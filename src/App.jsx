@@ -25,10 +25,6 @@ function App() {
     })
   }
 
-  const mostrarMensaje = (nombreProducto) => {
-    alert("Agregaste al carrito: " + nombreProducto)
-  }
-
   useEffect(() => {
     let tiempo = setInterval(() => {
       setContador((previo) => previo - 1)
@@ -51,7 +47,7 @@ function App() {
       <h1 className="mb-4">Abarrotes MONO</h1>
       {cargando ? (
         <div className="alert alert-info">
-          <h2>El catálogo cargará en {contador} segundos...</h2>
+          <h2>El catalogo cargara en {contador} segundos</h2>
         </div>
       ) : (
         <Catalogo lista={productos} accionComprar={mostrarMensaje} />
