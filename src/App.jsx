@@ -25,6 +25,10 @@ function App() {
     })
   }
 
+  const mostrarMensaje = (nombreProducto) => {
+    alert("Agregaste al carrito: " + nombreProducto)
+  }
+
   useEffect(() => {
     let tiempo = setInterval(() => {
       setContador((previo) => previo - 1)

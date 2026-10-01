@@ -5,6 +5,9 @@ function Producto({ info}) {
             <div className="card-body">
                 <h5 className="card-title">{info.nombre}</h5>
                 <p className="card-text">{info.precio} MXN</p>
+                <button className="btn btn-success" onClick={() => boton(info.nombre)}>
+                    Comprar
+                </button>
 
             </div>
         </div>
